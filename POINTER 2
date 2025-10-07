@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+   int a = 10;
+   int b = 20;
+   int tem =0;
+int *ptrt = &tem;
+int *ptra = &a;
+int *ptrb = &b;
+
+*ptrt = *ptra;
+*ptra = *ptrb;
+*ptrb = *ptrt;
+
+printf("After swap by ref: \n");
+printf("Value of a : %d\n",*ptra);
+printf("Value of b :%d\n",*ptrb);
+
+
+return 0;
+}
